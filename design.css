@@ -1,0 +1,82 @@
+/*** Global Style Settings ***/
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#navBar {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: flex-end;
+    margin: 1em;
+    padding: 1em;
+
+}
+
+.navButton {
+    display: flex;
+    padding: 1em;
+    text-decoration: none;
+}
+
+#myName, #myTitle {
+    display: flex;
+    justify-content: center;
+}
+
+#contactInfo {
+    list-style: none;
+}
+
+.contactInfoButtons {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 1em;
+}
+
+#proficienciesList {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.skills {
+    display: flex;
+    border-style: solid;
+    padding: 1em;
+}
+
+.projectsIcon {
+    list-style: none;
+}
+
+#aboutMe {
+    display: flex;
+    padding: 1em;
+}
+
+
+/*** Mobile Styling ***/
+
+@media screen and (max-width: 767px) {
+
+    body {
+        border-style: solid;
+        border-color: black;
+    }
+
+
+    #navBar {
+        display: none;
+    }
+
+
+
+}
