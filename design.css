@@ -1,9 +1,16 @@
 /*** Global Style Settings ***/
 
 body {
+    color: #2b27ff;
+    font-family: 'Montserrat', Helvetica, sans-serif;
+    font-weight: 300;
+}
+
+body, main, #thingsIdo {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 1em;
 }
 
 #navBar {
@@ -25,10 +32,12 @@ body {
 #myName, #myTitle {
     display: flex;
     justify-content: center;
+    font-weight: 1000;
 }
 
 #contactInfo {
     list-style: none;
+    padding: 1em;
 }
 
 .contactInfoButtons {
@@ -45,20 +54,51 @@ body {
     list-style: none;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    padding: 1em;
+    border-radius: 5%;
+    border-style: dotted;
+    border-color: #0bd6ff;
 }
 
 .skills {
     display: flex;
-    border-style: solid;
+    padding: 0.5em;
+
+}
+
+#portfolio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding: 1em;
 }
 
 .projectsIcon {
+    display: flex;
     list-style: none;
+    padding: 1em;
+    max-width: 100%;
+    justify-content: center;
+    margin: 0.25em;
+    border-style: solid;
+    border-radius: 5px;
+    background-color: #2b27ff;
+    color: white;
+
 }
 
-#aboutMe {
+#aboutMe, #aboutMeButton {
     display: flex;
+    justify-content: center;
+    align-content: center;
+    min-width: 100%;
+    color: #2b27ff;
+
+}
+
+#myDescription {
+    display: flex;
+    justify-content: center;
     padding: 1em;
 }
 
@@ -73,10 +113,43 @@ body {
     }
 
 
-    #navBar {
+    #navBar, #aboutMe, .projectDescrip1 {
         display: none;
     }
 
+
+    header {
+            display: flex;
+            flex-direction: row;
+            font-size: 35%;
+            justify-content: space-evenly;
+            align-items: baseline;
+
+
+        }
+
+        #myName, #myTitle {
+            font-weight: 5000;
+        }
+
+
+
+        #skills {
+            display: flex;
+            flex-direction: row;
+            padding: 15%;
+
+        }
+
+        #proficienciesList {
+            margin-top: 0px;
+            padding: 0px;
+        }
+
+        .projectDescrip {
+            display: flex;
+            flex-direction: column;
+        }
 
 
 }
