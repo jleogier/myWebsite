@@ -1,38 +1,42 @@
 /*** Global Style Settings ***/
 
-body {
-    color: #2b27ff;
+body * {
+    display: flex;    
     font-family: 'Montserrat', Helvetica, sans-serif;
     font-weight: 300;
 }
 
-body, main, #thingsIdo {
-    display: flex;
+body, main, #thingsIdo, header {
     flex-direction: column;
     justify-content: center;
     padding: 1em;
 }
 
+#proficienciesCountainer {
+    flex-direction: column;
+    background-color: #12AE98;
+}
+
 #navBar {
-    display: flex;
-    flex-direction: row;
+    flex-direction: column;
     list-style: none;
-    justify-content: flex-end;
+    justify-content: center;
+    align-content: center;
     margin: 1em;
     padding: 1em;
-
 }
 
-.navButton {
-    display: flex;
+.navButtons {
     padding: 1em;
+    justify-content: center;
+    align-content: center;
     text-decoration: none;
+    width: 100%;
 }
 
-#myName, #myTitle {
-    display: flex;
-    justify-content: center;
+#myName {
     font-weight: 1000;
+    font-size: 3em;
 }
 
 #contactInfo {
@@ -40,116 +44,103 @@ body, main, #thingsIdo {
     padding: 1em;
 }
 
-.contactInfoButtons {
+/* li {
     display: flex;
     flex-direction: row;
     text-decoration: none;
     justify-content: space-evenly;
     list-style: none;
     padding: 1em;
+} */
+
+section {
+    flex-direction: column;
+}
+
+#profHeading {
+    justify-content: center;
+    font-weight: bolder;
 }
 
 #proficienciesList {
-    display: flex;
     list-style: none;
     justify-content: space-evenly;
     flex-wrap: wrap;
     padding: 1em;
-    border-radius: 5%;
-    border-style: dotted;
-    border-color: #0bd6ff;
 }
 
 .skills {
-    display: flex;
-    padding: 0.5em;
+    /* padding: 0.5em; */
+    color: #12AE98;
+    flex-direction: row;
+    text-decoration: none;
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 1em;
 
 }
 
 #portfolio {
-    display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 1em;
 }
 
 .projectsIcon {
-    display: flex;
     list-style: none;
     padding: 1em;
     max-width: 100%;
     justify-content: center;
     margin: 0.25em;
     border-style: solid;
-    border-radius: 5px;
-    background-color: #2b27ff;
-    color: white;
-
+    border-radius: 0.5em;
 }
 
-#aboutMe, #aboutMeButton {
-    display: flex;
+/* #aboutMe, #aboutMeButton {
     justify-content: center;
     align-content: center;
     min-width: 100%;
-    color: #2b27ff;
-
 }
 
 #myDescription {
-    display: flex;
     justify-content: center;
     padding: 1em;
 }
 
+.projContents {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
 
 /*** Mobile Styling ***/
 
 @media screen and (max-width: 767px) {
 
-    body {
-        border-style: solid;
-        border-color: black;
-    }
-
-
-    #navBar, #aboutMe, .projectDescrip1 {
+    #logo, #aboutMe, #projectDescrip1, #projectDescrip2, #projectDescrip3 {
         display: none;
     }
 
-
-    header {
-            display: flex;
-            flex-direction: row;
-            font-size: 35%;
-            justify-content: space-evenly;
-            align-items: baseline;
-
-
-        }
-
-        #myName, #myTitle {
-            font-weight: 5000;
-        }
-
-
-
-        #skills {
-            display: flex;
-            flex-direction: row;
-            padding: 15%;
-
+        #proficienciesCountainer, #projectList {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
 
         #proficienciesList {
-            margin-top: 0px;
-            padding: 0px;
-        }
-
-        .projectDescrip {
-            display: flex;
-            flex-direction: column;
+            margin-top: 0.25em;
+            padding: 0.5em;
         }
 
 
+
+}
+
+
+
+@media screen and (min-width: 768px) {
+    #portfolio {
+        flex-direction: row;
+
+    }
 }
