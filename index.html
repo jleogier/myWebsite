@@ -4,99 +4,93 @@
         <meta charset="UTF-8">
         <meta name="description" content="My Website">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-        <meta name="keywords" content="Jeremy, Le-Ogier, HTML, CSS, XML, XHTML, JavaScript">
+        <meta name="keywords" content="Jeremy, Le-Ogier, HTML, CSS, JavaScript, Portfolio, Personal Website">
         <meta name="author" content="Jeremy Le-Ogier">
-        <link rel="stylesheet" type="text/css" href="design.css"></link>       
+        
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css"/>
         <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,1000,5000" rel="stylesheet">
+        
+        <link rel="stylesheet" type="text/css" href="./slick-master/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="./slick-master/slick/slick-theme.css"/>
+        <link rel="stylesheet" type="text/css" href="design2.css"/>
+
     </head>
 
     <body>
         <header>
             <div id="logo">logo</div>
-            <h1>HEY, I'M</h1>
-            <p id="myName">JEREMY</p>
-            <h2>A (WEB/SOFTWARE/APP)</h2>
-            <p>DEVELOPER</p>
+            <h3>HEY, I'M</h3>
+            <h1 id="myName">JEREMY</h1>
+            <h2>A 
+                <div class="autoslide">
+                    <div>WEB</div>
+                    <div>FULLSTACK</div>
+                    <div>SOFTWARE</div>
+                </div>
+            </h2>
+            <h1>DEVELOPER</h1>
         </header>
         
-        <main>
+    <main>
 
-            <section>
-                <h3 id="profHeading">I work with</h3>
-                <div id="proficienciesCountainer>">
-                    <ul id="proficienciesList">
-                        <li class="skills">PostgreSQL</li>
-                        <li class="skills">React</li>
-                        <li class="skills">Node.js</li>                    
-                        <li class="skills">JavaScript</li>
-                        <li class="skills">HTML</li>
-                        <li class="skills">CSS</li>
-                        <li class="skills">Python</li>
-                    </ul>
-                </div> 
-            </section>
-
-            <!-- <div id="projCountainer">
-            <h3 id="projectList">Projects</h3>
-                <ul id="portfolio">
-                    <li type="button" class="projectsIcon" id="projIcon1">
-                        <div class="projContents" id="projcontent1">
-                            <h3 class="projHeader" id="projHead1">Quiz App</h3>
-                            <p id="projectDescrip1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>  
-                            <a class="linksToProj" href="">Live Project</a>
-                        </div>
-                    </li>
-
-
-
-                    <li type="button" class="projectsIcon" id="projIcon2">
-                            <div class="projContents" id="projcontent2">
-                                <h3 class="projHeader" id="projHead2">Some Project 2</h3>
-                                <p id="projectDescrip2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>  
-                                <a class="linksToProj" href="">Live Project 2</a>
-                            </div>
-                        </li>
-
-
-                        <li type="button" class="projectsIcon" id="projIcon3">
-                                <div class="projContents" id="projcontent3">
-                                    <h3 class="projHeader" id="projHead3">Some Project 3</h3>
-                                    <p id="projectDescrip3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>  
-                                    <a class="linksToProj" href="">Live Project 3</a>
-                                </div>
-                            </li>                
+        <section>
+            <h3 id="profHeading">I work with</h3>
+            <div id="proficienciesCountainer>">
+                <ul id="proficienciesList">
+                    <li class="skills">POSTGRESQL</li>
+                    <li class="skills">REACT</li>
+                    <li class="skills">NODE.JS</li>                    
+                    <li class="skills">JAVASCRIPT</li>
+                    <li class="skills">HTML</li>
+                    <li class="skills">CSS</li>
+                    <li class="skills">PYTHON</li>
                 </ul>
-            </div> -->
-            
+            </div> 
+        </section>
 
-            <!-- <section>
-                <input id="aboutMeButton" type="button" value="About Me"/>
-                <div id="aboutMe">
-                    <p id="myDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>   
-                </div>
-            </section> -->
+        <ul id="navBar">
+                <!-- <li><a class="navButton" href="Home.asp">Home</a></li> -->
+                <li><a class="navButtons" href="work.asp">WORK</a></li>
+                <li><a class="navButtons" href="aboutMe.asp">CONTACT</a></li>
+        </ul>
+        
+        <div class="dotsHere"></div>
 
-            <ul id="navBar">
-                    <!-- <li><a class="navButton" href="Home.asp">Home</a></li> -->
-                    <li><a class="navButtons" href="work.asp">Work</a></li>
-                    <li><a class="navButtons" href="aboutMe.asp">Contact</a></li>
-            </ul>
+        <div class="slider">
+            <div class="projContents" id="projcontent1">
+                    <h3 class="projHeader" id="projHead1">Quiz App</h3>
+                    <a class="linksToProj" href="">Live Project</a>
+                    <p class="arrowsHere" id="projectDescrip1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>  
+            </div>
+            <div class="projContents" id="projcontent2">
+                    <h3 class="projHeader" id="projHead2">Some Project 2</h3>
+                    <a class="linksToProj" href="">Live Project 2</a>
+                    <p class="arrowsHere" id="projectDescrip2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>  
+            </div>
+            <div class="projContents" id="projcontent3">
+                    <h3 class="projHeader" id="projHead3">Some Project 3</h3>
+                    <a class="linksToProj" href="">Live Project 3</a>
+                    <p class="arrowsHere" id="projectDescrip3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>  
+            </div>
+        </div>  
 
-        </main>
+        <section class="aboutMe">
+                <h1>MY PATH</h1>
+                <p id="myDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <a id="myEmail" href="mailto:jeremy.leogier@gmail.com">Jeremy.LeOgier@gmail.com</a>
+                <a id="myResume" href="./directory/yourfile.pdf" download="resumeJeremyLe-Ogier">DOWNLOAD MY RESUME</a>
+        </section>
+    </main>
 
 
     <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>    
     <script src="experiment.js"></script>
+    <script type="text/javascript" src="./slick-master/slick/slick.min.js"></script>
     </body>
 
     <footer id="favIcons">
-
-            <!-- <li><a class="contactInfoButtons" id="myEmail" href=“mailto:Jeremy.LeOgier@gmail.com”>Jobs@LeOgier.com</a></li> -->
-
-            <!-- Why won't this show up?!?!?! -->
-            <a href="https://github.com/jleogier"><img class="contactInfoButtons" id="GitHubLink" type="image/png" rel="shortcut icon" src="./GitHubMarkDark.png"/></a>
-            <a href="https://www.linkedin.com/"><img class="contactInfoButtons" id="linkedInLink" src="./LinkdInMark.png" /></a>
-
+        <a href="https://github.com/jleogier"><img class="contactInfoButtons" id="GitHubLink" type="image/png" rel="shortcut icon" src="./GitHubMarkDark.png"/></a>
+        <a href="https://www.linkedin.com/"><img class="contactInfoButtons" id="linkedInLink" src="./LinkdInMark.png" /></a>
     </footer>
 
 </html>

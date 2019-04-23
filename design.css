@@ -1,20 +1,24 @@
 /*** Global Style Settings ***/
 
-body * {
+* {
     display: flex;    
     font-family: 'Montserrat', Helvetica, sans-serif;
     font-weight: 300;
+    font-size: 0.5em; 
 }
 
-body, main, #thingsIdo, header {
+body, main, #thingsIdo, header, #myDescription {
     flex-direction: column;
     justify-content: center;
-    padding: 1em;
+    padding: 0.25em;
+    margin: 0.5em;
+
 }
 
 #proficienciesCountainer {
     flex-direction: column;
     background-color: #12AE98;
+    flex-wrap: wrap;
 }
 
 #navBar {
@@ -22,8 +26,8 @@ body, main, #thingsIdo, header {
     list-style: none;
     justify-content: center;
     align-content: center;
-    margin: 1em;
-    padding: 1em;
+    margin: 0.25em;
+    padding: 0.25em;    
 }
 
 .navButtons {
@@ -31,17 +35,40 @@ body, main, #thingsIdo, header {
     justify-content: center;
     align-content: center;
     text-decoration: none;
-    width: 100%;
+    color: black;
+    font-weight: bolder;
+}
+
+header {
+    font-size: 1em;
+}
+
+header > p {
+    margin: 0.25em;
+}
+
+header > h2 {
+    font-size: 0.5em;
 }
 
 #myName {
     font-weight: 1000;
-    font-size: 3em;
+    font-size: 1.5em;
+    margin: 0.25em;
 }
 
 #contactInfo {
     list-style: none;
     padding: 1em;
+}
+
+#favIcons {
+    justify-content: center;
+    align-content: center;    
+}
+
+.contactInfoButtons {
+    margin: 1em;
 }
 
 /* li {
@@ -96,16 +123,18 @@ section {
     border-radius: 0.5em;
 }
 
+#myDescription {
+    justify-content: center;
+    padding: 1em;
+}
+
 /* #aboutMe, #aboutMeButton {
     justify-content: center;
     align-content: center;
     min-width: 100%;
 }
 
-#myDescription {
-    justify-content: center;
-    padding: 1em;
-}
+
 
 .projContents {
     flex-direction: column;
@@ -121,19 +150,16 @@ section {
         display: none;
     }
 
-        #proficienciesCountainer, #projectList {
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
+    #proficienciesCountainer, #projectList {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
-        #proficienciesList {
-            margin-top: 0.25em;
-            padding: 0.5em;
-        }
-
-
-
+    #proficienciesList {
+        margin-top: 0.25em;
+        padding: 0.5em;
+    }
 }
 
 

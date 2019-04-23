@@ -1,0 +1,140 @@
+* {
+    display: flex;
+    flex-direction: column;
+
+}
+
+body * {
+    margin: 0.15em;
+}
+
+.slick-dots {
+    position: relative;
+}
+
+header {
+    font-size: 1.35em;
+}
+
+header > h2 {
+    flex-direction: row;
+    flex-basis: center;
+    align-items: center;
+}
+
+header > h3 {
+    font-weight: 100;
+    margin-top: 1em;
+}
+
+#proficienciesList {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0.15em;
+    height: 35%;
+}
+
+.autoslide > div {
+    color: #12AE98;
+    font-weight: 300;
+    top: -4px;
+}
+
+section > h3 {
+    text-align: center;
+}
+
+section > h1 { 
+    text-align: center;
+}
+
+section > a {
+    text-align: center;
+}
+
+.projHeader, .linksToProj {
+    text-align: center;
+}
+
+#profHeading {
+    margin-top: 1.3em;
+    font-size: 2.5em;
+}
+
+.skills {
+    color: #12AE98;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-decoration: none;
+    list-style: none;
+    padding: 0.5em;
+    flex-wrap: wrap;
+    font-size: 1.4em;
+}
+
+#myDescription {
+    text-align: center;
+    padding: 0.5em;
+    overflow: auto;
+}
+
+#navBar {
+    margin-bottom: 3.5em;
+    padding: 0.5em;
+}
+
+a.navButtons {
+    justify-content: center;
+    align-content: center;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    list-style-type: none;
+    font-size: 2.4em;
+}
+
+.slick-dots {
+    position: static;
+}
+
+a#myResume {
+    text-decoration: none;
+    color: #12AE98
+}
+
+.aboutMe {
+    height: 27em;
+}
+
+/*WHY DOESN'T THIS WORK?! first-word might not be a thing despite internet saying otherwise. VScode says no*/
+a#myResume:first-word {
+    color: black;
+}
+
+#myEmail {
+    text-decoration: none;
+    color: black;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: fixed;
+    bottom: 0px;
+    background-color: #12AE98;
+    margin-bottom: 0px;
+    width: 100%;
+}
+
+.contactInfoButtons {
+    align-content: center;
+    padding: 1em;
+}
+
+@media screen and (max-width: 767px) {
+
+    #logo {
+        display: none;
+    }
+}
