@@ -85,7 +85,7 @@ section > a {
 .slick-next, .slick-prev {
     color: #12AE98;
     border-style: solid;
-    position: absolute;
+    position: static;
     background-color: #12AE98;
 }
 
