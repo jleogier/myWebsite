@@ -76,17 +76,40 @@ section > a {
     font-size: 1.4em;
 }
 
+#workHeader {
+    text-align: center;
+}
+
+.slick-list {
+    height: 0px;
+}
+
 .linksToProj {
     border-style: solid;
     border-color: black;
-    height: 5em;
+    height: 15em;
 }
 
 .slick-next, .slick-prev {
     color: #12AE98;
     border-style: solid;
-    position: static;
-    background-color: #12AE98;
+    background-color: black;
+}
+
+.slick-next {
+    right: 25px;
+    background-image: url('./RightArrow.svg');
+    width: 10%;
+    background-size: cover;
+    /* height: 10%; */
+}
+
+.slick-prev {
+    left: 25px;
+}
+
+.slick-next:hover {
+    transform: scale();
 }
 
 #myDescription {
@@ -120,7 +143,7 @@ a#myResume {
 }
 
 .aboutMe {
-    height: 27em;
+    margin-bottom: 75px;
 }
 
 /*WHY DOESN'T THIS WORK?! first-word might not be a thing despite internet saying otherwise. VScode says no*/
