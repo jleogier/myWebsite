@@ -10,7 +10,7 @@ $( document ).ready(function() {
         appendDots: $('.dotsHere'),
 
         responsive: [{
-            breakpoint: 700,
+            breakpoint: 300,
             settings: {
                 arrows: true,
                 appendArrows: $('.arrowsHere'),

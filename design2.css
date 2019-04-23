@@ -27,6 +27,10 @@ header > h3 {
     margin-top: 1em;
 }
 
+.autoslide {
+    text-align: center;
+}
+
 #proficienciesList {
     flex-direction: row;
     flex-wrap: wrap;
@@ -70,6 +74,19 @@ section > a {
     padding: 0.5em;
     flex-wrap: wrap;
     font-size: 1.4em;
+}
+
+.linksToProj {
+    border-style: solid;
+    border-color: black;
+    height: 5em;
+}
+
+.slick-next, .slick-prev {
+    color: #12AE98;
+    border-style: solid;
+    position: absolute;
+    background-color: #12AE98;
 }
 
 #myDescription {
