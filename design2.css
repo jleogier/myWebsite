@@ -27,9 +27,9 @@ header > h3 {
     margin-top: 1em;
 }
 
-.autoslide {
+/* .autoslide {
     text-align: center;
-}
+} */
 
 #proficienciesList {
     flex-direction: row;
@@ -91,21 +91,25 @@ section > a {
 }
 
 .slick-next, .slick-prev {
-    color: #12AE98;
-    border-style: solid;
-    background-color: black;
-}
-
-.slick-next {
-    right: 25px;
-    background-image: url('./RightArrow.svg');
-    width: 10%;
+    width: 5%;
+    height: 15%;
     background-size: cover;
-    /* height: 10%; */
+    /* border-style: solid;
+    border-color: #12AE98; */
 }
 
 .slick-prev {
-    left: 25px;
+    left: 5px;
+    background-image: url('./LeftArrow.svg');
+}
+
+.slick-next {
+    right: 5px;
+    background-image: url('./rightArrow\(v2\).svg');
+}
+
+.slick-prev:before, .slick-next:before {
+    font-size: 0px;
 }
 
 .slick-next:hover {
